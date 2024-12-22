@@ -1,0 +1,130 @@
+.Profile {
+    .Profile_AddVakancy {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .addVakancy_description {
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            background: rgba(236, 240, 241, 0.95);
+            color: #1a252f;
+            padding: 0 25px 35px;
+            border-radius: 8px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+
+            img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 160px;
+                height: 160px;
+                margin: 10px auto 0;
+                border-radius: 100%;
+                background-color: #ecf0f1;
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 36px;
+                color: rgba(0, 0, 0, 0.5);
+                box-shadow: 0px 6px 6px gray;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                background: rgba(26, 188, 156, 0.16);
+                border-radius: 16px;
+                padding: 29px;
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                position: relative;
+
+                li {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: #1a252f;
+                }
+
+                button {
+                    position: absolute;
+                    right: 20px;
+                    bottom: 20px;
+                    border-radius: 8px;
+                    width: 100px;
+                    height: 29px;
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                    background: #3498db;
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    color: #fff;
+                    transition: all 0.13s;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #3498db;
+                    }
+                }
+            }
+        }
+
+        .vakancies_form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background: rgba(217, 223, 223, 0.95);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            color: #1a252f;
+            padding: 20px;
+            border-radius: 8px;
+
+            >p {
+                text-align: center;
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 24px;
+                color: #000000a4;
+            }
+
+            >input {
+                outline: none;
+                border: 0;
+                padding: 8px 12px;
+                border-radius: 8px;
+            }
+
+            >textarea {
+                outline: none;
+                border: 0;
+                width: 100%;
+                height: 200px;
+                padding: 8px 12px;
+                border-radius: 8px;
+            }
+
+            >button {
+                outline: none;
+                border: 0;
+                padding: 8px 12px;
+                border-radius: 8px;
+                transition: all 0.1s;
+
+                &:hover {
+                    background-color: #3498DB;
+                    box-shadow: 0px 0px 6px rgba(204, 204, 204, 0.705);
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .Profile_MyVacancies {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        background: rgba(236, 240, 241, 0.93);
+        border-radius: 16px;
+    }
+}

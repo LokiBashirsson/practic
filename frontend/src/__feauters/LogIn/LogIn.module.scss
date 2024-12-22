@@ -1,0 +1,98 @@
+.LogIn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 30%);
+
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .container_box {
+            position: relative;
+            border-radius: 16px;
+            width: 1366px;
+            height: 766px;
+            background-color: white;
+            overflow: hidden;
+
+            .header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 38px;
+                color: #ceecf4;
+                text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+                height: 156px;
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                background: rgba(230, 126, 34, 0.9);
+            }
+
+            .body {
+                position: relative;
+                background-image: url(../../assets/login.jpg);
+                height: 610px;
+
+                form {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 22px;
+                    top: 129px;
+                    right: 32px;
+                    width: 385px;
+
+                    input {
+                        padding: 9px 15px;
+                        border-radius: 8px;
+                        width: 385px;
+                        height: 37px;
+                        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                        background: rgba(217, 217, 217, 0.4);
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: rgba(0, 0, 0, 0.5);
+                        margin: 0 0 4px 0;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #e67e22;
+                    }
+
+                    button {
+                        border-radius: 8px;
+                        width: 385px;
+                        height: 37px;
+                        font-family: var(--font-family);
+                        font-weight: 700;
+                        font-size: 16px;
+                        color: #fff;
+                        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                    }
+
+                    .login {
+                        background: #3498db;
+                    }
+
+                    .regin {
+                        background: #e67e22;
+                    }
+                }
+            }
+        }
+    }
+}
